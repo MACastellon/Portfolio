@@ -1,0 +1,46 @@
+@media only screen and (max-width: 999px) {
+    .icon-next {
+       display: none;
+    }
+    .icon-prev {
+        display: none;
+    }
+}
+.project-container {
+    margin: 0 auto;
+    width: 70%;
+}
+.offset {
+    margin-left: 0.5rem;
+}
+.icon {
+    color: gray;
+    font-size: 5rem;
+}
+.icon-next {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 3%;
+   /*text-align: right;*/
+}
+.icon-prev {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 3%;
+}
+.icon:hover {
+    color: #252525;
+}
+.icon:focus {
+    color: black;
+}
+
+.icon-close {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 5%;
+
+}
+

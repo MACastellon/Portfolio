@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+@media only screen and (max-width: 772px) {
+
+    .contact-info {
+        flex-direction: column;
+    }
+    .navbar-brand h1  {
+        font-size: 1.3rem;
+    }
+    .navbar-brand p  {
+        font-size: 1.2rem;
+    }
+}
+
+* , html{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "Roboto";
+    font-size: 1.7rem;
+    color: #fff;
+}
+h2 {
+    font-family: "Roboto Light";
+    font-size: 3rem;
+}
+h2 + p {
+    margin-bottom: 8rem;
+}
+
+h3 {
+    font-family: "Roboto";
+    font-size: 1.1rem;
+}
+p {
+    font-size: 1.1rem;
+}
+nav {
+    text-align: center;
+}
+a {
+    color: #5d5d5d;
+    display: inline-block;
+    margin-bottom: 1rem;
+
+
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #252525;
+    z-index: 9999;
+}
+
+footer {
+    background-color: #252525;
+}
+
+.profil-img {
+    text-align: center;
+}
+.info {
+    margin-bottom: 1em;
+}
+.list > li {
+    margin: 0 0 0 2rem;
+}
+
+.list-no-style {
+    list-style: none;
+}
+
+.btInfo {
+    margin: 0.5rem 0 0 0 ;
+}
+.btLink {
+    padding :  0.5rem 2rem 0.5rem 2rem;
+    border: solid #252525 0.09rem;
+    color: black;
+    display: inline-block;
+}
+.btLink:hover {
+    color: #ffffff;
+    background-color : #252525;
+    text-decoration: none;
+}
+
+.btLinkAlt {
+    padding :  0.5rem 2rem 0.5rem 2rem;
+    border: solid #252525 0.09rem;
+    color: white;
+    display: inline-block;
+    background-color : #252525;
+}
+.btLinkAlt:hover {
+    color: black;
+    background-color : #fff;
+    text-decoration: none;
+}
+
+.container-content {
+    background-color: white;
+    border: 1px solid #fff;
+    border-radius: 1%;
+}
+.main {
+    padding: 5rem 0 4rem 0;
+    position: relative;
+    min-height:  100vh;
+}
+
+.navbar-brand {
+    color: #fff;
+    margin: 0;
+    text-align: left;
+    margin: auto 0;
+    padding: 0 0 0 0.4rem;
+
+}
+.navbar-brand *  {
+    margin: 0;
+}
+.navbar-brand p{
+    font-size: 1rem;
+    font-family: "Roboto Light";
+}
+
+.brand  {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    padding: 0;
+}
+.navbar-collapse {
+    margin: 0;
+    flex-grow: inherit;
+}
+.navbar-toggler {
+    color: #fff;
+    border: none;
+}
+.next-proj {
+    justify-content: flex-end;
+}
+.return {
+    margin-bottom: -1rem;
+}
+
+.hide {
+    display: none;
+}
+.card {
+    border: 1px solid #9a9a9a;
+    transition: box-shadow 300ms;
+    margin-bottom: 1rem;
+
+}
+.card-title {
+    font-family: "Roboto";
+}
+.card:hover {
+    box-shadow: 5px 5px 7px rgba(37, 37, 37, 0.75);
+    transition: box-shadow 300ms;
+}
+.btContact {
+
+    font-size: 1.5rem;
+    color: black;
+    background-color: #fff;
+    border: solid white 0.5px;
+    margin: 0.5rem;
+    text-align: center;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+
+
+}
+.btContact:hover {
+    color: white;
+    background-color: #252525;
+}
+
+.btContactAlt {
+
+    font-size: 2rem;
+    color: white;
+    background-color: #252525;
+    border: solid white 1.8px;
+    margin: 0.5rem;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    line-height: 68px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.btContactAlt:hover {
+    color: black;
+    background-color: #fff;
+    border-color: #252525;
+}
+
+.btPortfolio  {
+    margin: 8rem 0 0 0;
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
+}
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.contact-title {
+  display: flex;
+}
+.contact-title h3 {
+    font-family: "Roboto Light";
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+.contact-mail {
+    text-align: center;
+    margin-top: 4rem;
+}
+.contact-mail a{
+    padding: 1rem 4rem;
+}
+.knowledge-logo {
+    line-height: 1;
+}
+.knowledge-logo-img {
+    width:100%;
+    height: auto;
+    transition: width 300ms;
+}
+#logo-span {
+    display: block;
+    opacity: 0;
+    transition: opacity 300ms;
+    text-align: center;
+
+}
+
+.knowledge-logo:hover #logo-span{
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.knowledge-logo:hover  img{
+    filter: grayscale(70%);
+    transition: width 300ms
+}
+.center img {
+   margin: 0 auto;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.skills img {
+    margin: 0.5rem;
+}
+.underline {
+    border-bottom: 1px solid #9a9a9a;
+    padding-bottom: 0.5rem;
+    margin:3rem 0  2rem 0;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.goBack{
+    margin-top: 3rem;
+}
+.googleMap {
+   margin: 3rem 0;
+}
+.project-visual {
+    margin-bottom: 1rem;
+}
+.underline.project-title {
+    margin: 0 0 2rem 0;
+}
+
+.anim-right {
+    position: relative;
+    animation: slideIn 1s;
+}
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@-moz-keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
