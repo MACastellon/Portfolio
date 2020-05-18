@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import ProjectSlider from "./components/Projects/Project/ProjectSlider";
@@ -11,11 +11,23 @@ import "./App.css"
 import {Container} from "react-bootstrap";
 
 const App = (props) => {
+    const [language, setLanguage] = useState("fr");
 
+    const changeLanguage = (language) => {
+        if (language == "fr") {
+            setLanguage("en")
+        } else {
+            setLanguage("fr")
+        }
+    }
+   /* <div>{language}</div>
+    <button onClick={() => changeLanguage(language)}>{language == "fr" ? ("en") : ("fr")}</button>*/
     return (
         <>
             <Header/>
+
             <main className={"main"}>
+
                 <Container>
                     <div className={"container-content"}>
                         <Switch>
