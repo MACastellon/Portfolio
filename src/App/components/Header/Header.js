@@ -12,7 +12,7 @@ const Header = (props) => {
                 <Navbar collapseOnSelect expand="lg" variant={"dark"}>
                     <Container>
                         <div className={"brand"}>
-                            <Image src={"logo.svg"}  width={"75px"} fluid/>
+                            <Image src={"/logo.svg"}  width={"75px"} fluid/>
                             <Navbar.Brand href="/home"> <h1>Marc-André Castellon</h1><p>Programmeur</p></Navbar.Brand>
                         </div>
                         <Navbar.Toggle  aria-controls="responsive-navbar-nav"/>
