@@ -36,7 +36,7 @@ const Home = (props) => {
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png" alt="Logo de C#"/>
+                            <img  width={"55px"} src="/images/csharp_logo.png" alt="Logo de C#"/>
                             <span id={"logo-span"}>C#</span>
                         </div>
                         <div className={"knowledge-logo"}>
@@ -48,7 +48,8 @@ const Home = (props) => {
                             <span id={"logo-span"}>Html 5</span>
                         </div>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src={"https://cdn.clipart.email/3637715a86b9dfe0eecc15b86b889132_web-development-html-cascading-style-sheets-css3-bootstrap-png-_728-827.jpeg"} />
+                            <img width={"55px"} src="/images/css_logo.png" alt="Official Css Logo Png" />
+
                             <span id={"logo-span"}>CSS 3</span>
                         </div>
                     </div>
