@@ -1,12 +1,8 @@
 import React, {useContext} from "react";
-import {Container, Row, Col, Image, Card} from "react-bootstrap";
-import projects from "../../../data/projects";
-import Projects from "../Projects/Projects";
+import {Row, Col, Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowLeft, faArrowRight, faFilePdf} from "@fortawesome/free-solid-svg-icons";
-import {faGoogleDrive} from "@fortawesome/free-brands-svg-icons";
-import Contact from "../Contact/Contact";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import LanguageContext from "../../context/LanguageContext";
 
 const Home = (props) => {
@@ -36,7 +32,7 @@ const Home = (props) => {
                     </div>
                 </Col>
             </Row>
-            <h2 className={"underline"}>{language == "fr" ? ("Mes Connaissances"):("My Knowledge")}</h2>
+            <h2 className={"underline"}>{language == "fr" ? ("Mes Connaissances"):("Knowledge")}</h2>
             <Row lg={3} md={3} xs={1}>
                 <Col>
                     <div className={"contact-title"}>
@@ -106,7 +102,7 @@ const Home = (props) => {
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
-                        <h3>Engin</h3>
+                        <h3>{language == "fr" ? ("Engin"):("Engine")}</h3>
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>

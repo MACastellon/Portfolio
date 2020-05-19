@@ -24,9 +24,7 @@ const Header = (props) => {
                             <Nav.Link as={NavLink} eventKey={2} to="/projects">{language == "fr" ? ("Projets"):("Project")}</Nav.Link>
                             <Nav.Link as={NavLink} eventKey={3} to="/contact">Contact</Nav.Link>
                         </Nav>
-                        <div>
-                            {language === "fr" ? (<Link eventKey={4} className={"languageSwap"} onClick={() => changeLanguageFn("en")}>English</Link>) : (<Link eventKey={4} onClick={() => changeLanguageFn("fr")} className={"languageSwap"} >Français</Link>)}
-                        </div>
+                        {language === "fr" ? (<Link eventKey={4} className={"languageSwap btLinkAlt"} onClick={() => changeLanguageFn("en")}>English</Link>) : (<Link eventKey={4} onClick={() => changeLanguageFn("fr")} className={"languageSwap btLinkAlt"} >Français</Link>)}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
