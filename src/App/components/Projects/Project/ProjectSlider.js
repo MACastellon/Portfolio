@@ -28,7 +28,6 @@ const ProjectSlider = (props) => {
 
     return(
         <>
-
             <Swipeable onSwipedLeft={() => {Next()}}  onSwipedRight={() => {Prev()}}>
                     <Project  id={id}/>
             </Swipeable>

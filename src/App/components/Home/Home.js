@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Container, Row, Col, Image, Card} from "react-bootstrap";
 import projects from "../../../data/projects";
 import Projects from "../Projects/Projects";
@@ -7,20 +7,28 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft, faArrowRight, faFilePdf} from "@fortawesome/free-solid-svg-icons";
 import {faGoogleDrive} from "@fortawesome/free-brands-svg-icons";
 import Contact from "../Contact/Contact";
+import LanguageContext from "../../context/LanguageContext";
 
 const Home = (props) => {
-
+    const {language} = useContext(LanguageContext);
     return (
 
         <>
             <h2 className={"underline"}>Marc-André Castellon</h2>
             <Row lg={2} md={2} xs={1}>
                 <Col lg={9}>
-                    <p>
-                        Je suis finissant en techniques d’intégration multimédia et ma passion c’est la programmation !
-                        Quand je suis passionné dans un domaine quelconque je suis prêt à me donner corps et âme, car je n’aime pas faire les choses à moiter.
-                        J’aime relever des défis et je suis prêt relever des montages. Alors j’espère pourvoir bientôt en relever avec vous!
-                    </p>
+                    {language == "fr" ? (
+                        <p>
+                            Je suis finissant en techniques d’intégration multimédia et ma passion c’est la programmation !
+                            Quand je suis passionné dans un domaine quelconque je suis prêt à me donner corps et âme, car je n’aime pas faire les choses à moiter.
+                            J’aime relever des défis et je suis prêt relever des montages. Alors j’espère pourvoir bientôt en relever avec vous!
+                        </p>
+                    ):(
+                        <p>
+                           English Version
+                        </p>
+                    )}
+
                 </Col>
                 <Col lg={3}>
                     <div className={"profil-img"}>
@@ -28,7 +36,7 @@ const Home = (props) => {
                     </div>
                 </Col>
             </Row>
-            <h2 className={"underline"}>Mes Connaissances</h2>
+            <h2 className={"underline"}>{language == "fr" ? ("Mes Connaissances"):("My Knowledge")}</h2>
             <Row lg={3} md={3} xs={1}>
                 <Col>
                     <div className={"contact-title"}>
@@ -108,7 +116,7 @@ const Home = (props) => {
                     </div>
                 </Col>
             </Row>
-           <div className="center "><Link  to={"/projects"} class={"btLink btPortfolio"}>Voir Portfolio <FontAwesomeIcon icon={faArrowRight}/></Link></div>
+           <div className="center "><Link  to={"/projects"} class={"btLink btPortfolio"}>{language == "fr" ? ("Voir Portfolio"):("See Portfolio")} <FontAwesomeIcon icon={faArrowRight}/></Link></div>
         </>
 
     )

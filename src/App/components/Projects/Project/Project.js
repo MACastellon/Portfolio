@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {useHistory} from "react-router-dom"
 import projects from "../../../../data/projects";
 import {Container, Row, Col, Card, Button, Image, Popover } from 'react-bootstrap';
@@ -8,7 +8,7 @@ import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import "./Project.css";
 import {Link} from "react-router-dom";
 import {Swipeable } from 'react-swipeable'
-import {CSSTransition, TransitionGroup} from "react-transition-group";
+import LanguageContext from "../../../context/LanguageContext";
 
 
 
@@ -17,9 +17,10 @@ const Project = (props) => {
 
     const id  = props.id;
     const project = projects[id];
+    const {language} = useContext(LanguageContext);
     return (
         <>
-            <div className={"goBack"}><Link to={"/projects"}><FontAwesomeIcon icon={faArrowLeft}/> Retour à la liste de projets</Link></div>
+            <div className={"goBack"}><Link to={"/projects"}><FontAwesomeIcon icon={faArrowLeft}/> {language == "fr" ? ("Retour à la liste de projets"):("Back to the portfolio")} </Link></div>
             <h2 className={"underline project-title"}>{project.title}</h2>
             <Row lg={2} md={1} xs={1}>
                 <Col>
@@ -34,17 +35,17 @@ const Project = (props) => {
                 </Col>
                 <Col>
                     <div className={"info"}>
-                        <h3>À propos</h3>
+                        <h3>{language == "fr" ? ("À propos"):("About")}</h3>
                         {project.descriptions.map((desc , key) => {
                             return <p>{desc.description}</p>
                         })}
                     </div>
                     <div className={"info"}>
-                        <h3>Langage</h3>
+                        <h3>{language == "fr" ? ("Langage"):("Language")}</h3>
                         <p>{project.language}</p>
                     </div>
                     <div className={"info"}>
-                        <h3>Logiciel(s) / outils utilisée(s)</h3>
+                        <h3>{language == "fr" ? ("Logiciel(s) / outils utilisée(s)"):("Software(s) / Tool(s)")}</h3>
                         <ul className={"list"}>
                             {project.softwares.map((software) => {
                                 return <li>{software.name}</li>
@@ -64,7 +65,7 @@ const Project = (props) => {
                         null
                     )}
                     {project.role? (
-                        <div className={"info"}><h3>Rôle</h3>{project.role}</div>
+                        <div className={"info"}><h3>{language == "fr" ? ("Rôle"):("Role")}</h3>{project.role}</div>
                     ) : (
                         null
                     )}

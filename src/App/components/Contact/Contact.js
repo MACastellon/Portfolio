@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Container, Row, Col, Card, Button, Image ,Form} from 'react-bootstrap';
 import {FormGroup, FormText} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faFilePdf, faHome,faPhoneAlt, faSuitcase} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGoogleDrive, faFacebookF, faTwitter, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
-
+import LanguageContext from "../../context/LanguageContext";
 const Contact = () => {
-
+    const {language} = useContext(LanguageContext);
     return (
         <>
             <h2 className={"underline"}>Contact</h2>
@@ -18,7 +18,7 @@ const Contact = () => {
                     <p><FontAwesomeIcon icon={faEnvelope}/> castel.mvp@gmail.com</p>
                 </div>
                 <div>
-                    <p><FontAwesomeIcon icon={faSuitcase}/> En recherche d'emploi</p>
+                    <p><FontAwesomeIcon icon={faSuitcase}/> {language == "fr" ? ("En recherche d'emploi"):("Looking for a job")} </p>
                 </div>
             </div>
             <iframe
@@ -38,7 +38,7 @@ const Contact = () => {
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
-                        <h3 className={"contact-title"}>Réseaux Sociaux</h3>
+                        <h3 className={"contact-title"}>{language == "fr" ? ("Réseaux Sociaux"):("Social Media")}</h3>
                     </div>
                     <div className={"contact-section"}>
                         <a href="https://www.linkedin.com/in/marc-andr%C3%A9-castellon-409944190/" className={"btContactAlt"} target={"_blank"}><FontAwesomeIcon icon={faLinkedinIn}/></a>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </Col>
             </Row>
             <div className={"contact-mail"}>
-                <a href="mailto:castel.mvp@gmail.com" className={"btLink"}>Écrivrez moi <FontAwesomeIcon icon={faEnvelope}/></a>
+                <a href="mailto:castel.mvp@gmail.com" className={"btLink"}>{language == "fr" ? ("Écrivrez moi"):("Send Message")} <FontAwesomeIcon icon={faEnvelope}/></a>
             </div>
         </>
     )
