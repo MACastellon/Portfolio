@@ -4,30 +4,21 @@ import Home from "./components/Home/Home";
 import ProjectSlider from "./components/Projects/Project/ProjectSlider";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import ChooseLanguage from "./components/ChooseLanguage/ChooseLanguage";
 import Footer from "./components/Footer/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route, Switch, Redirect} from "react-router-dom";
 import "./App.css"
 import {Container} from "react-bootstrap";
+import {LanguageProvider, LanguageConsumer} from "./context/LanguageContext";
 
 const App = (props) => {
-    const [language, setLanguage] = useState("fr");
 
-    const changeLanguage = (language) => {
-        if (language == "fr") {
-            setLanguage("en")
-        } else {
-            setLanguage("fr")
-        }
-    }
-   /* <div>{language}</div>
-    <button onClick={() => changeLanguage(language)}>{language == "fr" ? ("en") : ("fr")}</button>*/
-    return (
-        <>
-            <Header/>
 
+    const showRoute = (context) => {
+        return context.language != null?(
             <main className={"main"}>
-
+                Langue choisi = {context.language}
                 <Container>
                     <div className={"container-content"}>
                         <Switch>
@@ -40,8 +31,32 @@ const App = (props) => {
                     </div>
                 </Container>
             </main>
-            <Footer/>
-        </>
+        ) : (
+            <main className={"main"}>
+                Choisi ta langue
+                <Container>
+                    <div className={"container-content"}>
+                        <Switch>
+                            <Route path="/" component={ChooseLanguage}/>
+                            <Redirect to={"/"} />
+                        </Switch>
+                    </div>
+                </Container>
+            </main>
+        )
+    }
+
+    return (
+        <div>
+            <LanguageProvider>
+                <Header/>
+                <LanguageConsumer>
+                    {showRoute}
+                </LanguageConsumer>
+                <Footer/>
+            </LanguageProvider>
+
+        </div>
     )
 }
 

@@ -310,6 +310,9 @@ footer {
 .underline.project-title {
     margin: 0 0 2rem 0;
 }
+.languageSwap {
+    color: #d6d6d6;
+}
 
 .anim-right {
     position: relative;
