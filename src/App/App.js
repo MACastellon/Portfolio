@@ -17,23 +17,26 @@ const App = (props) => {
 
     const showRoute = (context) => {
         return context.language != null?(
-            <main className={"main"}>
-                Langue choisi = {context.language}
-                <Container>
-                    <div className={"container-content"}>
-                        <Switch>
-                            <Route path="/home" component={Home}/>
-                            <Route path="/projects/:id" component={ProjectSlider}/>
-                            <Route path="/projects" component={Projects}/>
-                            <Route path="/contact/" component={Contact}/>
-                            <Redirect to={"/home"} />
-                        </Switch>
-                    </div>
-                </Container>
-            </main>
+            <>
+                <Header/>
+                <main className={"main"}>
+                    <Container>
+                        <div className={"container-content"}>
+                            <Switch>
+                                <Route path="/home" component={Home}/>
+                                <Route path="/projects/:id" component={ProjectSlider}/>
+                                <Route path="/projects" component={Projects}/>
+                                <Route path="/contact/" component={Contact}/>
+                                <Redirect to={"/home"} />
+                            </Switch>
+                        </div>
+                    </Container>
+                </main>
+                <Footer/>
+            </>
+
         ) : (
-            <main className={"main"}>
-                Choisi ta langue
+            <main className={"main-lang-select"}>
                 <Container>
                     <div className={"container-content"}>
                         <Switch>
@@ -49,11 +52,9 @@ const App = (props) => {
     return (
         <div>
             <LanguageProvider>
-                <Header/>
                 <LanguageConsumer>
                     {showRoute}
                 </LanguageConsumer>
-                <Footer/>
             </LanguageProvider>
 
         </div>

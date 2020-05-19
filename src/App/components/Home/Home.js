@@ -40,7 +40,7 @@ const Home = (props) => {
             <Row lg={3} md={3} xs={1}>
                 <Col>
                     <div className={"contact-title"}>
-                        <h3>Langages</h3>
+                        <h3>{language == "fr" ? ("Langages"):("Languages")}</h3>
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
@@ -91,7 +91,7 @@ const Home = (props) => {
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
-                        <h3>Logiciels</h3>
+                        <h3>{language == "fr" ? ("Logiciels"):("Softwares")}</h3>
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>

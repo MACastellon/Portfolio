@@ -1,22 +1,17 @@
 import React, {useContext} from "react";
-import {Row, Col} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {Row, Col, Image} from "react-bootstrap";
 import LanguageContext from "../../context/LanguageContext";
 
 const ChooseLanguage = () => {
     const {changeLanguageFn} = useContext(LanguageContext);
     return (
-        <div>
-            <Row>
-                <Col>
-                    <h2>Choisi une langue</h2>
-                    <button onClick={() => {changeLanguageFn("fr")} }>Français</button>
-                </Col>
-                <Col>
-                    <h2>Choose a language</h2>
-                    <button onClick={() => {changeLanguageFn("en")} }>English</button>
-                </Col>
-            </Row>
-        </div>
+        <>
+            <Image src={"/logo.svg"}  />
+            <h2>Portfolio</h2>
+            <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("fr")} }>Français</Link>
+            <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("en")} }>English</Link>
+        </>
     )
 }
 

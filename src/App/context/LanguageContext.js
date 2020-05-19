@@ -11,9 +11,10 @@ const LanguageProvider = props => {
             setLanguage(window.localStorage.getItem("lang"));
         }
     }, [])
+
     const changeLanguage = async (language) => {
-       setLanguage(language)
-        window.localStorage.setItem("lang" , language)
+        setLanguage(language)
+        //window.localStorage.setItem("lang" , language)
     }
 
     const value = {language : language, changeLanguageFn : changeLanguage}
