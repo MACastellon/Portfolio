@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom";
-import {Row, Col, Image} from "react-bootstrap";
+import {Image} from "react-bootstrap";
 import LanguageContext from "../../context/LanguageContext";
 
 const ChooseLanguage = () => {
@@ -9,8 +9,8 @@ const ChooseLanguage = () => {
         <>
             <Image src={"/logo.svg"}  />
             <h2>Portfolio</h2>
-            <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("fr")} }>Français</Link>
-            <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("en")} }>English</Link>
+            <button className={"btLinkAlt"} onClick={(e) => {changeLanguageFn("fr")} }>Français</button>
+            <button className={"btLinkAlt"} onClick={(e) => {changeLanguageFn("en")} }>English</button>
         </>
     )
 }

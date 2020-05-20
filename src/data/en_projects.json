@@ -1,0 +1,99 @@
+[
+
+  {
+    "id": "0",
+    "image": "/images/attaque_patate.PNG",
+    "title": "Attaque des patates" ,
+    "descriptions":[
+      {"id": 0, "description":  "English Version"}
+    ],
+    "date": "2019" ,
+    "category": "Jeux Vidéo" ,
+    "language": "C#",
+    "softwares": [
+      {"name": "Unity"},
+      {"name": "Visual Studio"},
+      {"name": "GitHub"},
+      {"name": "Mantis BugTracker"}
+    ] ,
+    "youtubeId": "xM5tWiQ6gNw",
+    "contributions": [
+      {"id": "0", "description": "Bug fixing for the combat phase"},
+      {"id": "1", "description": "Quest system"},
+      {"id": "2", "description": "Programming on some quest"},
+      {"id": "3", "description": "Targeting system for combat phase"}
+    ],
+    "role": "Programmeur principal",
+    "type": "school",
+    "note": ""
+  },
+
+  {
+    "id": "1",
+    "title": "LabyBoom" ,
+    "image": "/images/labyboom.png",
+    "descriptions":[
+      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
+      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+    ],
+    "date": "2019" ,
+    "category": "Jeux Vidéo" ,
+    "language": "Javascript",
+    "softwares": [
+      {"name": "Visual Studio"},
+      {"name": "SourceTree"},
+      {"name": "Mantis Bug Tracker"}
+    ] ,
+    "youtubeId": "nYp7YIuO2TI",
+    "contributions": [
+      {"id": "0", "description": "Corriger les différents bogues du jeu pour en améliorer sa qualité"},
+      {"id": "1", "description": "Programmation / ajout  de la potion permettant de traverser les murs"},
+      {"id": "2", "description": "Programmation de la page d’instruction et son bouton"},
+      {"id": "3", "description": "Rapport de bogue dans Mantis Bug Tracker"}
+    ],
+    "role": "Programmeur",
+    "type": "school",
+    "note": "Le jeu n’a pas été développer par moi et le visuelle ne provient pas de moi.",
+    "github": ""
+  },
+  {
+    "id": "2",
+    "title": "Tower Simulator" ,
+    "image": "/images/tower_simulator.png",
+    "descriptions":[
+      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
+      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+    ],
+    "date": "2019" ,
+    "category": "Jeux Vidéo" ,
+    "language": "C#",
+    "softwares": [
+      {"name": "Unity"},
+      {"name": "Visual Studio"}
+    ] ,
+    "youtubeId": "snB7aa6rm2w",
+    "type": "school",
+    "note": "Le visuelle des personnages ne provienent pas de moi.",
+    "github": "https://github.com/MACastellon/Tower-Simulator"
+  },
+  {
+    "id": "3",
+    "title": "Space Ninja" ,
+    "image": "/images/space_ninja.png",
+    "descriptions":[
+      {"id": 0, "description": "Petit jeu développé dans le carde du cours de programmation. Toute la programmation et les visuels ont été fait par moi. Les musiques et effets sonore proviennent du site incompetech.com"}
+    ],
+    "date": "2019" ,
+    "category": "Jeux Vidéo" ,
+    "language": "C#",
+    "softwares": [
+      {"name": "Unity"},
+      {"name": "Visual Studio"},
+      {"name": "Photoshop"},
+      {"name": "Illustrator"}
+    ] ,
+    "youtubeId": "mrRVZgfECHc",
+    "type": "school",
+    "github": "https://github.com/MACastellon/Space-Ninja/"
+  }
+]

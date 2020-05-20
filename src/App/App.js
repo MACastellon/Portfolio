@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import ProjectSlider from "./components/Projects/Project/ProjectSlider";
@@ -16,7 +16,7 @@ const App = (props) => {
 
 
     const showRoute = (context) => {
-        return context.language != null?(
+        return  context.language !=null || window.localStorage.getItem("lang")?(
             <>
                 <Header/>
                 <main className={"main"}>

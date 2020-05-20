@@ -1,11 +1,9 @@
-import React, {useContext, useState} from "react";
-import Project from "./Project/Project";
+import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faTwitter, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faGithub} from "@fortawesome/free-brands-svg-icons";
-import projects from "../../../data/projects";
-import {Container, Row, Col, Card, Button, Image , Spinner} from 'react-bootstrap';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import projects from "../../../data/fr_projects";
+import {Row, Col, Card} from 'react-bootstrap';
 import "./Projects.css";
 import LanguageContext from "../../context/LanguageContext";
 
@@ -22,7 +20,7 @@ const Projects = (props) => {
 
     return (
         <>
-            <h2 className={"underline"}>{language == "fr" ? ("Mes Projets"):("My Projects")}</h2>
+            <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
                     <Row lg={3} md={2} xs={1}>
                     {projects.map((project, key) => {
                         return (
@@ -34,7 +32,7 @@ const Projects = (props) => {
                                             <Card.Text>
                                                 {shorten(project.descriptions[0].description)}
                                             </Card.Text>
-                                            <Link  to={{pathname: '/projects/'+project.id }} class={"btLink"}>{language == "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
+                                            <Link  to={{pathname: '/projects/'+project.id }} class={"btLink"}>{language === "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
                                         </Card.Body>
                                     </Card>
                             </Col>

@@ -1,13 +1,10 @@
-import React, {useContext, useEffect, useState} from "react";
-import {useHistory} from "react-router-dom"
-import projects from "../../../../data/projects";
-import {Container, Row, Col, Card, Button, Image, Popover } from 'react-bootstrap';
+import React, {useContext} from "react";
+import {Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 import "./Project.css";
 import {Link} from "react-router-dom";
-import {Swipeable } from 'react-swipeable'
 import LanguageContext from "../../../context/LanguageContext";
 
 
@@ -15,12 +12,13 @@ import LanguageContext from "../../../context/LanguageContext";
 
 const Project = (props) => {
 
+    const {language, projects} = useContext(LanguageContext);
     const id  = props.id;
     const project = projects[id];
-    const {language} = useContext(LanguageContext);
+
     return (
         <>
-            <div className={"goBack"}><Link to={"/projects"}><FontAwesomeIcon icon={faArrowLeft}/> {language == "fr" ? ("Retour à la liste de projets"):("Back to the portfolio")} </Link></div>
+            <div className={"goBack"}><Link to={"/projects"}><FontAwesomeIcon icon={faArrowLeft}/> {language === "fr" ? ("Retour à la liste de projets"):("Back to the portfolio")} </Link></div>
             <h2 className={"underline project-title"}>{project.title}</h2>
             <Row lg={2} md={1} xs={1}>
                 <Col>
@@ -35,20 +33,20 @@ const Project = (props) => {
                 </Col>
                 <Col>
                     <div className={"info"}>
-                        <h3>{language == "fr" ? ("À propos"):("About")}</h3>
+                        <h3>{language === "fr" ? ("À propos"):("About")}</h3>
                         {project.descriptions.map((desc , key) => {
-                            return <p>{desc.description}</p>
+                            return <p key={key}>{desc.description}</p>
                         })}
                     </div>
                     <div className={"info"}>
-                        <h3>{language == "fr" ? ("Langage"):("Language")}</h3>
+                        <h3>{language === "fr" ? ("Langage"):("Language")}</h3>
                         <p>{project.language}</p>
                     </div>
                     <div className={"info"}>
-                        <h3>{language == "fr" ? ("Logiciel(s) / outils utilisée(s)"):("Software(s) / Tool(s)")}</h3>
+                        <h3>{language === "fr" ? ("Logiciel(s) / outils utilisée(s)"):("Software(s) / Tool(s)")}</h3>
                         <ul className={"list"}>
-                            {project.softwares.map((software) => {
-                                return <li>{software.name}</li>
+                            {project.softwares.map((software , key) => {
+                                return <li key={key}>{software.name}</li>
                             } )}
                         </ul>
                     </div>
@@ -57,7 +55,7 @@ const Project = (props) => {
                             <h3>Contributions</h3>
                             <ul className={"list"}>
                                 {project.contributions.map((contribution , key) => {
-                                    return <li>{contribution.description}</li>
+                                    return <li key={key}>{contribution.description}</li>
                                 })}
                             </ul>
                         </div>
@@ -65,7 +63,7 @@ const Project = (props) => {
                         null
                     )}
                     {project.role? (
-                        <div className={"info"}><h3>{language == "fr" ? ("Rôle"):("Role")}</h3>{project.role}</div>
+                        <div className={"info"}><h3>{language === "fr" ? ("Rôle"):("Role")}</h3>{project.role}</div>
                     ) : (
                         null
                     )}
@@ -76,7 +74,7 @@ const Project = (props) => {
                     )}
                     {project.github? (
                         <div>
-                            <a href={project.github} className="btLink btInfo" target="_blank"> GitHub <FontAwesomeIcon
+                            <a href={project.github} className="btLink btInfo" target="_blank" rel="noopener noreferrer" > GitHub <FontAwesomeIcon
                                 icon={faGithub}/></a>
                         </div>
                     ) : (

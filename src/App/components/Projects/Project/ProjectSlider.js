@@ -1,10 +1,10 @@
-import React, {useEffect, useState, useContext} from "react";
-import {Link, Route, __RouterContext, Switch} from "react-router-dom";
+import React from "react";
+import {Link} from "react-router-dom";
 import Project from "./Project";
-import {Button, Popover, OverlayTrigger, Carousel, CarouselItem, Col, Container} from "react-bootstrap";
-import projects from "../../../../data/projects";
+
+import projects from "../../../../data/fr_projects";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAngleLeft, faAngleRight , faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import {Swipeable} from "react-swipeable";
 
 
@@ -16,7 +16,6 @@ const ProjectSlider = (props) => {
     const Next =  () => {
         if (next < projects.length) {
             props.history.push("/projects/"+next);
-
         }
     }
     const Prev = () => {
