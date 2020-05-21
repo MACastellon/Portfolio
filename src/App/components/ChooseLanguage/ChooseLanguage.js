@@ -9,8 +9,8 @@ const ChooseLanguage = () => {
         <>
             <Image src={"/logo.svg"}  />
             <h2>Portfolio</h2>
-            <button className={"btLinkAlt"} onClick={(e) => {changeLanguageFn("fr")} }>Français</button>
-            <button className={"btLinkAlt"} onClick={(e) => {changeLanguageFn("en")} }>English</button>
+            <button className={"btLinkAlt"} onClick={() => {changeLanguageFn("fr")} }>Français</button>
+            <button className={"btLinkAlt"} onClick={() => {changeLanguageFn("en")} }>English</button>
         </>
     )
 }

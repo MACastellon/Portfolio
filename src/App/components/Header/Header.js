@@ -6,7 +6,7 @@ import LanguageContext from "../../context/LanguageContext";
 
 import "./Header.css";
 
-const Header = (props) => {
+const Header = () => {
     const {language, changeLanguageFn} = useContext (LanguageContext)
 
     return(
@@ -19,12 +19,15 @@ const Header = (props) => {
                     </div>
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse  id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link as={NavLink} eventKey={1} to="/home">{language === "fr" ? ("Accueil"):("Home")}</Nav.Link>
-                            <Nav.Link as={NavLink} eventKey={2} to="/projects">{language === "fr" ? ("Projets"):("Projects")}</Nav.Link>
-                            <Nav.Link as={NavLink} eventKey={3} to="/contact">Contact</Nav.Link>
-                        </Nav>
-                        {language === "fr" ? (<Link eventKey={4}  className={"languageSwap btLinkAlt"} onClick={() => changeLanguageFn("en")}>English</Link>) : (<Link eventKey={4} onClick={() => changeLanguageFn("fr")} className={"languageSwap btLinkAlt"} >Français</Link>)}
+                        <div className={"navbar-nav"}>
+                            <Nav.Link  as={NavLink} eventKey={1} to="/home">{language === "fr" ? ("Accueil"):("Home")}</Nav.Link>
+                            <Nav.Link as={NavLink}  eventKey={2} to="/projects">{language === "fr" ? ("Projets"):("Projects")}</Nav.Link>
+                            <Nav.Link as={NavLink}  eventKey={3} to="/contact">Contact</Nav.Link>
+                        </div>
+                        <div className={"langSwap"}>
+                            {language === "fr" ? (<Nav.Link eventKey={4}  className={"languageSwap btLinkAlt"} onClick={() => changeLanguageFn("en")}>English</Nav.Link>) : (<Nav.Link eventKey={4} onClick={() => changeLanguageFn("fr")} className={"languageSwap btLinkAlt"} >Français</Nav.Link>)}
+
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

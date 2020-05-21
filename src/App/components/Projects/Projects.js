@@ -2,13 +2,14 @@ import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import projects from "../../../data/fr_projects";
+
 import {Row, Col, Card} from 'react-bootstrap';
 import "./Projects.css";
 import LanguageContext from "../../context/LanguageContext";
 
-const Projects = (props) => {
-    const {language} = useContext(LanguageContext);
+const Projects = () => {
+    const {language, projects} = useContext(LanguageContext);
+    const  projectsList =  projects;
     const shorten = (str) => {
 
         if (str.lenght <= 100) {
@@ -22,7 +23,7 @@ const Projects = (props) => {
         <>
             <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
                     <Row lg={3} md={2} xs={1}>
-                    {projects.map((project, key) => {
+                    {projectsList.map((project, key) => {
                         return (
                             <Col key={key}>
                                     <Card>

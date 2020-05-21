@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Row, Col, Image} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import LanguageContext from "../../context/LanguageContext";
