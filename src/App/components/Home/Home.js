@@ -21,8 +21,8 @@ const Home = () => {
                         </p>
                     ):(
                         <p>
-                           I am about to graduate in techniques d’intégration multimédia at the CEGEP of St-Jérôme ! When I am passionate about something I'am ready to put my heart and soul at
-                            it, because I don't like to do things by halves. I love to challenge my self and I'm ready to raise mountains and I cannot wait to raise some with you!
+                            ( English content )
+                            
                         </p>
                     )}
 
