@@ -5,7 +5,8 @@
     "image": "/images/attaque_patate.PNG",
     "title": "Attaque des patates" ,
     "descriptions":[
-      {"id": 0, "description":  "English Version"}
+      {"id": 0, "description":  "During my quality control class, we had to take the game l’Attaque des patates and increase it quality! For this project we had to work in teams of 4 and I worked on the programming side."},
+      {"id": 0, "description":  "For this project my classmates and I have worked in sprint mode. Each we had a new objective to add a new feature to the game. We also did some user test to detect bug and watch the user behaviour in the game."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -18,14 +19,15 @@
     ] ,
     "youtubeId": "xM5tWiQ6gNw",
     "contributions": [
-      {"id": "0", "description": "Bug fixing for the combat phase"},
+      {"id": "0", "description": "Bug fixing for the combat phases"},
       {"id": "1", "description": "Quest system"},
-      {"id": "2", "description": "Programming on some quest"},
-      {"id": "3", "description": "Targeting system for combat phase"}
+      {"id": "2", "description": "Programming on some quests"},
+      {"id": "3", "description": "Targeting system for combat phases"}
     ],
-    "role": "Programmeur principal",
+    "role": "Lead Programmer",
     "type": "school",
-    "note": ""
+    "note": "The game has not been developed by myself",
+    "github": ""
   },
 
   {
@@ -33,8 +35,8 @@
     "title": "LabyBoom" ,
     "image": "/images/labyboom.png",
     "descriptions":[
-      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
-      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+      {"id": 0, "description": "During my quality control class, we had to take the game Labyboom and increase it quality! For this project we had to work in teams of 2 and I worked on the programming side."},
+      {"id": 1, "description":  "For this project my classmates and I have worked in sprint mode. Each we had a new objective to add a new feature to the game. We also did some user test to detect bug and watch the user behaviour in the game."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -46,14 +48,14 @@
     ] ,
     "youtubeId": "nYp7YIuO2TI",
     "contributions": [
-      {"id": "0", "description": "Corriger les différents bogues du jeu pour en améliorer sa qualité"},
-      {"id": "1", "description": "Programmation / ajout  de la potion permettant de traverser les murs"},
-      {"id": "2", "description": "Programmation de la page d’instruction et son bouton"},
-      {"id": "3", "description": "Rapport de bogue dans Mantis Bug Tracker"}
+      {"id": "0", "description": "Fixed different bugs to increase the game quality"},
+      {"id": "1", "description": "Programming of the portion that allow to go throught a wall"},
+      {"id": "2", "description": "Programming of the tutorial page"},
+      {"id": "3", "description": "Report bugs in Mantis Bug Tracker"}
     ],
-    "role": "Programmeur",
+    "role": "Programmer",
     "type": "school",
-    "note": "Le jeu n’a pas été développer par moi et le visuelle ne provient pas de moi.",
+    "note": "The game has not been developed by myself",
     "github": ""
   },
   {
@@ -61,8 +63,7 @@
     "title": "Tower Simulator" ,
     "image": "/images/tower_simulator.png",
     "descriptions":[
-      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
-      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+      {"id": 0, "description": "During my programming class, we had to develop a small tower management game with a saving system. In Tower Simulator you have to build the tallest tower, in order to generate money to buy even more floors."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -73,7 +74,7 @@
     ] ,
     "youtubeId": "snB7aa6rm2w",
     "type": "school",
-    "note": "Le visuelle des personnages ne provienent pas de moi.",
+    "note": "The characters visual have not been made by myself",
     "github": "https://github.com/MACastellon/Tower-Simulator"
   },
   {
@@ -81,7 +82,7 @@
     "title": "Space Ninja" ,
     "image": "/images/space_ninja.png",
     "descriptions":[
-      {"id": 0, "description": "Petit jeu développé dans le carde du cours de programmation. Toute la programmation et les visuels ont été fait par moi. Les musiques et effets sonore proviennent du site incompetech.com"}
+      {"id": 0, "description": "During my programming class, we had to develop a small evasion game. In Space Ninja you need to find 3 part of a key in order the open the door that will lead you to the access code that will allow you to leave this space station."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,

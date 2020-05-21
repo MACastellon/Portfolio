@@ -3,10 +3,10 @@
   {
     "id": "0",
     "image": "/images/attaque_patate.PNG",
-    "title": "Attaque des patates" ,
+    "title": "L' Attaque des patates" ,
     "descriptions":[
-      {"id": 0, "description":  "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu L'attaque des patates et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 4. Il y avait 2 programmeurs et 2 artistes. J’ai contribuer à ce projet du côté de la programmation"},
-      {"id": 1, "description":  "L’attaque des patates est un CRPG avec des combats tour par tour inspirée de Final Fantasy.   Dans ce projet moi et mes coéquipiers avons travaillé en méthode agile. Chaque semaine nous avions notre objectif, afin d’ajouter une nouvelle fonctionnalité. Nous avions également fait des tests utilisateurs, pour détecté des bogues et observé le comportement des joueurs dans le jeu."}
+      {"id": 0, "description":  "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu L'attaque des patates et d’amélioré sa qualité! Pour ce projet nous avons travaillé en équipe de 4 personne.  J’ai contribué à ce projet du côté de la programmation."},
+      {"id": 1, "description":  "Dans ce projet moi et mes coéquipiers avons travaillé en méthode agile. Chaque semaine nous avions notre objectif, afin d’ajouter une nouvelle fonctionnalité. Nous avions également fait des tests utilisateurs, pour détecter des bogues et observé le comportement des joueurs dans le jeu."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -26,7 +26,8 @@
     ],
     "role": "Programmeur principal",
     "type": "school",
-    "note": ""
+    "note": "Le jeu n’a pas été développer par moi et le visuelle ne provient pas de moi.",
+    "github": ""
   },
 
   {
@@ -34,7 +35,7 @@
     "title": "LabyBoom" ,
     "image": "/images/labyboom.png",
     "descriptions":[
-      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
+      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travaillé en équipe de 2. J’ai contribué à ce projet du côté de la programmation"},
       {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
     ],
     "date": "2019" ,
@@ -62,8 +63,7 @@
     "title": "Tower Simulator" ,
     "image": "/images/tower_simulator.png",
     "descriptions":[
-      {"id": 0, "description": "Dans le cadre nous cours de contrôle de la qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travailler en équipe de 2.  Il y avait  1 programmeur et 1 artiste. J’ai contribuer à ce projet du côté de la programmation"},
-      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en méthode agile, afin d’ajouter des nouvelles fonctionnalités au projet. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+      {"id": 0, "description": "Dans le cours de programmation, nous devions développer un petit jeu de gestion avec un système de sauvegarde. Dans Tower Simulator vous devrez construire la plus haute des tours, afin de générer de l'argent pour acheter de plus en plus d'étages."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -82,7 +82,7 @@
     "title": "Space Ninja" ,
     "image": "/images/space_ninja.png",
     "descriptions":[
-      {"id": 0, "description": "Petit jeu développé dans le carde du cours de programmation. Toute la programmation et les visuels ont été fait par moi. Les musiques et effets sonore proviennent du site incompetech.com"}
+      {"id": 0, "description": "Dans le cours de programmation, nous devions développer un petit jeu d’évasion. Dans Space Ninja vous devrez trouver les 3 partis d’une clé pour ouvrir la porte qui vous mènera au code d’accès pour vous évader."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
