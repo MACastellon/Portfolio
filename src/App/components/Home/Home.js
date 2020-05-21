@@ -15,13 +15,14 @@ const Home = () => {
                 <Col lg={9}>
                     {language === "fr" ? (
                         <p>
-                            Je suis finissant en techniques d’intégration multimédia et ma passion c’est la programmation !
+                            Je suis finissant en techniques d’intégration multimédia au cégep de Saint-Jérôme !
                             Quand je suis passionné dans un domaine quelconque je suis prêt à me donner corps et âme, car je n’aime pas faire les choses à moiter.
-                            J’aime relever des défis et je suis prêt relever des montages. Alors j’espère pourvoir bientôt en relever avec vous!
+                            J’aime relever des défis et je suis prêt relever des montagnes et j’ai hâte d'en relever avec vous!
                         </p>
                     ):(
                         <p>
-                           English Version
+                           I am about to graduate in techniques d’intégration multimédia at the CEGEP of St-Jérôme ! When I am passionate about something I'am ready to put my heart and soul at
+                            it, because I don't like to do things by halves. I love to challenge my self and I'm ready to raise mountains and I cannot wait to raise some with you!
                         </p>
                     )}
 
