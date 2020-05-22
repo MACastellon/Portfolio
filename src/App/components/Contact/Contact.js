@@ -5,7 +5,11 @@ import {faEnvelope, faFilePdf, faHome, faSuitcase} from "@fortawesome/free-solid
 import { faGithub, faGoogleDrive, faFacebookF, faTwitter, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import LanguageContext from "../../context/LanguageContext";
 
+
 const Contact = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
     const {language} = useContext(LanguageContext);
     return (
         <>

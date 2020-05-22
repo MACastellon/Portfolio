@@ -6,6 +6,9 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import LanguageContext from "../../context/LanguageContext";
 
 const Home = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
     const {language} = useContext(LanguageContext);
     return (
 
@@ -20,7 +23,7 @@ const Home = () => {
                                 J’adore <b>programmer</b> que cela soit des <b>jeux</b> ou des <b>applications web</b>.
                             </p>
                             <p>
-                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre j'aime travailler sur des <b>projets personnelles</b>, afin d'agrandir mes connaissances.
+                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre j'aime travailler sur des <b>projets personnelles</b>, afin d'approfondir mes connaissances.
                             </p>
                         </>
 
@@ -32,7 +35,7 @@ const Home = () => {
 
                             </p>
                             <p>
-                                I like to take on challenges and learn new things. When I have some spare times I like to work on <b>hobby projects</b> in order to deepen my knowledge.
+                                I like to take on challenges and learn new things. When I have some spare time I like to work on <b>hobby projects</b> in order to deepen my knowledge.
                             </p>
                         </>
                     )}

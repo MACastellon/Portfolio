@@ -9,6 +9,9 @@ import {Swipeable} from "react-swipeable";
 
 
 const ProjectSlider = (props) => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
     const id  = props.match.params.id;
     let prev = id - 1;
     let next = prev + 2;

@@ -8,6 +8,9 @@ import "./Projects.css";
 import LanguageContext from "../../context/LanguageContext";
 
 const Projects = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
     const {language, projects} = useContext(LanguageContext);
     const  [projectsList, setProjectList] = useState([]);
     useEffect(() => {
