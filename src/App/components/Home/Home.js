@@ -10,20 +10,31 @@ const Home = () => {
     return (
 
         <>
-            <h2 className={"underline"}>Marc-André Castellon</h2>
+            <h2 className={"underline"}>{language === "fr" ? ("À propos") : ("About")}</h2>
             <Row lg={2} md={2} xs={1}>
                 <Col lg={9}>
                     {language === "fr" ? (
-                        <p>
-                            Je suis finissant en techniques d’intégration multimédia au cégep de Saint-Jérôme !
-                            Quand je suis passionné dans un domaine quelconque je suis prêt à me donner corps et âme, car je n’aime pas faire les choses à moiter.
-                            J’aime relever des défis et je suis prêt relever des montagnes et j’ai hâte d'en relever avec vous!
-                        </p>
+                        <>
+                            <p>
+                                Bonjour, je suis Marc-André Castellon et je suis un <b>programmeur</b>. Je suis finissant en techniques d’intégration multimédia au cégep de Saint-Jérôme.
+                                J’adore <b>programmer</b> que cela soit des <b>jeux</b> ou des <b>applications web</b>.
+                            </p>
+                            <p>
+                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre j'aime travailler sur des <b>projets personnelles</b>, afin d'agrandir mes connaissances.
+                            </p>
+                        </>
+
                     ):(
-                        <p>
-                            ( English content )
-                            
-                        </p>
+                        <>
+                            <p>
+                                Hello, my name is Marc-André Castellon and I’m a <b>programmer</b>. I’m about to graduate in Multimedia Integration Techniques
+                                at Saint-Jérôme’s CEGEP. I love to program whether it’s <b>games</b> or either <b>web applications</b> .
+
+                            </p>
+                            <p>
+                                I like to take on challenges and learn new things. When I have some spare times I like to work on <b>hobby projects</b> in order to deepen my knowledge.
+                            </p>
+                        </>
                     )}
 
                 </Col>

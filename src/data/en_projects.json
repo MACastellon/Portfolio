@@ -5,8 +5,8 @@
     "image": "/images/attaque_patate.PNG",
     "title": "Attaque des patates" ,
     "descriptions":[
-      {"id": 0, "description":  "During my quality control class, we had to take the game l’Attaque des patates and increase it quality! For this project we had to work in teams of 4 and I worked on the programming side."},
-      {"id": 0, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature to the game. We also did some user test to detect bug and watch the user behaviour in the game."}
+      {"id": 0, "description":  "During my quality control class we had to take the game l’Attaque des patates and increase it quality! For this project we had to work in teams of 4 and I worked on the programming side."},
+      {"id": 0, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature. We also did some user test to detect bugs and observe user's behaviour in the game."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -35,8 +35,8 @@
     "title": "LabyBoom" ,
     "image": "/images/labyboom.png",
     "descriptions":[
-      {"id": 0, "description": "During my quality control class, we had to take the game Labyboom and increase it quality! For this project we had to work in teams of 2 and I worked on the programming side."},
-      {"id": 1, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature to the game. We also did some user test to detect bug and watch the user behaviour in the game."}
+      {"id": 0, "description": "During my quality control class we had to take the game Labyboom and increase it quality! For this project we had to work in teams of 2 and I worked on the programming side."},
+      {"id": 1, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature. We also did some user test to detect bug and observe user's behaviour in the game."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
