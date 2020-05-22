@@ -18,7 +18,7 @@ const Contact = () => {
                     <p><FontAwesomeIcon icon={faEnvelope}/> macastellon101@gmail.com</p>
                 </div>
                 <div>
-                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("En recherche d'emploi"):("Looking for a job")} </p>
+                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? (" À l'école"):(" At school")} </p>
                 </div>
             </div>
             <iframe
@@ -34,7 +34,6 @@ const Contact = () => {
                     </div>
                     <div className={"contact-section"}>
                         <a href="/files/maCastellon_cv.pdf" className={"btContactAlt"} download><FontAwesomeIcon icon={faFilePdf}/></a>
-                        <a href="google.com" className={"btContactAlt"} download><FontAwesomeIcon icon={faGoogleDrive}/></a>
                     </div>
                 </Col>
                 <Col>

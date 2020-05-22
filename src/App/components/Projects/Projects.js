@@ -1,7 +1,7 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight , faSearch} from "@fortawesome/free-solid-svg-icons";
 
 import {Row, Col, Card} from 'react-bootstrap';
 import "./Projects.css";
@@ -9,7 +9,10 @@ import LanguageContext from "../../context/LanguageContext";
 
 const Projects = () => {
     const {language, projects} = useContext(LanguageContext);
-    const  projectsList =  projects;
+    const  [projectsList, setProjectList] = useState([]);
+    useEffect(() => {
+        setProjectList(projects);
+    }, [])
     const shorten = (str) => {
 
         if (str.lenght <= 100) {
@@ -19,10 +22,17 @@ const Projects = () => {
         }
     }
 
+    const SearchHandler = (e) => {
+        setProjectList(projects.filter((project)  => project.title.toLowerCase().includes(e.target.value.toLowerCase())));
+    }
+
     return (
         <>
             <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
-                    <Row lg={3} md={2} xs={1}>
+            <div className="search-bar">
+                <input type="text" placeholder={language === "fr" ? ("Rechercher un projet") : ("Search a project")} onChange={SearchHandler}/>
+            </div>
+            <Row lg={3} md={2} xs={1}>
                     {projectsList.map((project, key) => {
                         return (
                             <Col key={key}>

@@ -6,7 +6,7 @@
     "title": "L' Attaque des patates" ,
     "descriptions":[
       {"id": 0, "description":  "Dans le cours de contrôle qualité nous avions comme mandat de prendre le jeu L'attaque des patates et d’amélioré sa qualité! Pour ce projet nous avons travaillé en équipe de 4 personne.  J’ai contribué à ce projet du côté de la programmation."},
-      {"id": 1, "description":  "Dans ce projet moi et mes coéquipiers avons travaillé en mode sprinte. Chaque semaine nous devions développer une nouvelle fonctionnalité. Nous avions également fait des tests utilisateurs, afin détecter des bogues et observer le comportement des joueurs dans le jeu."}
+      {"id": 1, "description":  "Dans ce projet moi et mes coéquipiers avons travaillé en mode sprint. Chaque semaine nous devions développer une nouvelle fonctionnalité. Nous avions également fait des tests utilisateurs, afin détecter des bogues et observer le comportement des joueurs dans le jeu."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -36,7 +36,7 @@
     "image": "/images/labyboom.png",
     "descriptions":[
       {"id": 0, "description": "Dans le cours de contrôle qualité nous avions comme mandat de prendre le jeu LabyBoom et d’amélioré sa qualité! Pour ce projet nous avons travaillé en équipe de 2. J’ai contribué à ce projet du côté de la programmation"},
-      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en mode sprinte. Chaque semaine nous devions développer une nouvelle fonctionnalité. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
+      {"id": 1, "description":  "Dans ce projet moi et mon coéquipier avions travailler en mode sprint. Chaque semaine nous devions développer une nouvelle fonctionnalité. Nous avons fait 2 tests utilisateurs lors du projet, afin d’observer le comportement des joueurs dans le jeu et aussi de s’assurer que les nouvelles fonctionnalités ajoutées étaient sans bogues "}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,

@@ -25,7 +25,7 @@ const LanguageProvider = props => {
         window.localStorage.setItem("lang" , language);
     }
 
-    const value = {language : language, projects: projects, changeLanguageFn : changeLanguage}
+    const value = {language : language, projects: projects,setProjects : setProjects, changeLanguageFn : changeLanguage}
     return (
         <LanguageContext.Provider value={value}>
             {props.children}
