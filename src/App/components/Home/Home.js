@@ -20,10 +20,10 @@ const Home = () => {
                         <>
                             <p>
                                 Bonjour, je suis Marc-André Castellon et je suis un <b>programmeur</b>. Je suis finissant en Techniques d’intégration multimédia au cégep de Saint-Jérôme.
-                                J’adore <b>programmer</b> que cela soit des <b>jeux</b> ou des <b>applications web</b>.
+                                J’adore <b>programmer</b> que ça soit des <b>jeux</b> ou des <b>applications web</b>.
                             </p>
                             <p>
-                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre j'aime travailler sur des <b>projets personnelles</b>, afin d'approfondir mes connaissances.
+                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre, j'aime travailler sur des <b>projets personnels</b> afin d'approfondir mes connaissances.
                             </p>
                         </>
 
@@ -31,7 +31,7 @@ const Home = () => {
                         <>
                             <p>
                                 Hello, my name is Marc-André Castellon and I’m a <b>programmer</b>. I’m about to graduate in Multimedia Integration Techniques
-                                at Saint-Jérôme’s CEGEP. I love to program whether it’s <b>games</b> or either <b>web applications</b>.
+                                at Saint-Jérôme’s CEGEP. I love to program, whether it’s <b>games</b> or <b>web applications</b>.
 
                             </p>
                             <p>

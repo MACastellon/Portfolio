@@ -22,7 +22,7 @@ const Contact = () => {
                     <p><FontAwesomeIcon icon={faEnvelope}/> macastellon101@gmail.com</p>
                 </div>
                 <div>
-                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? (" À l'école"):(" At school")} </p>
+                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("En recherche d'emploi"):("Looking for a job")} </p>
                 </div>
             </div>
             <iframe
@@ -60,7 +60,7 @@ const Contact = () => {
                 </Col>
             </Row>
             <div className={"contact-mail"}>
-                <a href="mailto:castel.mvp@gmail.com" className={"btLink"}>{language === "fr" ? ("Écrivrez moi"):("Send Message")} <FontAwesomeIcon icon={faEnvelope}/></a>
+                <a href="mailto:macastellon101@gmail.com" className={"btLink"}>{language === "fr" ? ("Écrivrez moi"):("Send Message")} <FontAwesomeIcon icon={faEnvelope}/></a>
             </div>
         </>
     )

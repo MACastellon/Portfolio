@@ -5,8 +5,7 @@
     "image": "/images/attaque_patate.PNG",
     "title": "Attaque des patates" ,
     "descriptions":[
-      {"id": 0, "description":  "During my quality control class we had to take the game l’Attaque des patates and increase it quality! For this project we had to work in teams of 4 and I worked on the programming side."},
-      {"id": 0, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature. We also did some user test to detect bugs and observe user's behaviour in the game."}
+      {"id": 0, "description":  "In my quality control class, we had to take the game l’Attaque des patates and increase it quality! For this project we had to work in teams of 4"}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -35,8 +34,7 @@
     "title": "LabyBoom" ,
     "image": "/images/labyboom.png",
     "descriptions":[
-      {"id": 0, "description": "During my quality control class we had to take the game Labyboom and increase it quality! For this project we had to work in teams of 2 and I worked on the programming side."},
-      {"id": 1, "description":  "For this project my classmates and I have worked in sprint mode. Each week we had to work on a new  feature. We also did some user test to detect bug and observe user's behaviour in the game."}
+      {"id": 0, "description": "In my quality control class, we had to take the game Labyboom and increase it quality! For this project we had to work in teams of 2."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -49,7 +47,7 @@
     "youtubeId": "nYp7YIuO2TI",
     "contributions": [
       {"id": "0", "description": "Fixed different bugs to increase the game quality"},
-      {"id": "1", "description": "Programming of the portion that allow to go throught a wall"},
+      {"id": "1", "description": "Programming of the potion that allow to go throught a wall"},
       {"id": "2", "description": "Programming of the tutorial page"},
       {"id": "3", "description": "Report bugs in Mantis Bug Tracker"}
     ],
@@ -63,7 +61,7 @@
     "title": "Tower Simulator" ,
     "image": "/images/tower_simulator.png",
     "descriptions":[
-      {"id": 0, "description": "During my programming class, we had to develop a small tower management game with a saving system. In Tower Simulator you have to build the tallest tower, in order to generate money to buy even more floors."}
+      {"id": 0, "description": "In my programming class, we had to develop a small tower management game with a saving system. In Tower Simulator you have to build the tallest tower in order to generate money to buy even more floors."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
@@ -82,7 +80,7 @@
     "title": "Space Ninja" ,
     "image": "/images/space_ninja.png",
     "descriptions":[
-      {"id": 0, "description": "During my programming class, we had to develop a small evasion game. In Space Ninja you need to find 3 part of a key in order the open the door that will lead you to the access code that will allow you to leave this space station."}
+      {"id": 0, "description": "In my programming class, we had to develop a small evasion game. In Space Ninja you need to find 3 parts of a key in order the open the door that will lead you to the access code  to leave this space station."}
     ],
     "date": "2019" ,
     "category": "Jeux Vidéo" ,
