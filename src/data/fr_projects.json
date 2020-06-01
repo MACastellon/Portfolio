@@ -1,29 +1,7 @@
 [
-  {
-    "id": "0",
-    "image": "/images/voxel_war.png",
-    "title": "Voxel War" ,
-    "descriptions":[
-      {"id": 0, "description":  "Cette démo a été développée dans mon temps libre et j'ai l'intention de la pousser un peu plus loin dans le futur. Dans Voxel War a été fortement inspiré de Dark Souls et Diablo."}
-    ],
-    "date": "2019" ,
-    "category": "Jeux Vidéo" ,
-    "language": "C#",
-    "softwares": [
-      {"name": "Unity"},
-      {"name": "Visual Studio"},
-      {"name": "GitHub"},
-      {"name": "Magica Voxel"},
-      {"name": "Mixamo"},
-      {"name": "Photoshop"}
-    ] ,
-    "youtubeId": "orevfHv9LhU",
-    "type": "personal",
-    "github": "https://github.com/MACastellon/Voxel-War"
-  },
 
   {
-    "id": "1",
+    "id": "0",
     "image": "/images/attaque_patate.PNG",
     "title": "L' Attaque des patates" ,
     "descriptions":[
@@ -52,7 +30,7 @@
   },
 
   {
-    "id": "2",
+    "id": "1",
     "title": "LabyBoom" ,
     "image": "/images/labyboom.png",
     "descriptions":[
@@ -79,7 +57,7 @@
     "github": ""
   },
   {
-    "id": "3",
+    "id": "2",
     "title": "Tower Simulator" ,
     "image": "/images/tower_simulator.png",
     "descriptions":[
@@ -98,7 +76,7 @@
     "github": "https://github.com/MACastellon/Tower-Simulator"
   },
   {
-    "id": "4",
+    "id": "3",
     "title": "Space Ninja" ,
     "image": "/images/space_ninja.png",
     "descriptions":[
