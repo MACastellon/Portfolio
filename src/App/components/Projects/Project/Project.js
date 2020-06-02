@@ -39,8 +39,12 @@ const Project = (props) => {
                         })}
                     </div>
                     <div className={"info"}>
-                        <h3>{language === "fr" ? ("Langage"):("Language")}</h3>
-                        <p>{project.language}</p>
+                        <h3>{language === "fr" ? ("Langage(s)"):("Language(s)")}</h3>
+                        <ul className={"list"}>
+                            {project.language.map((lang , key) => {
+                                return <li key={key}>{lang.name}</li>
+                            } )}
+                        </ul>
                     </div>
                     <div className={"info"}>
                         <h3>{language === "fr" ? ("Logiciel(s) / outils utilisée(s)"):("Software(s) / Tool(s)")}</h3>

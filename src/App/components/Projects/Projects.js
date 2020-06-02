@@ -13,9 +13,10 @@ const Projects = () => {
 
     const {language, projects} = useContext(LanguageContext);
     const  [projectsList, setProjectList] = useState([]);
+
     useEffect(() => {
         setProjectList(projects);
-    }, [language])
+    }, [projects,language])
     const shorten = (str) => {
 
         if (str.lenght <= 100) {
