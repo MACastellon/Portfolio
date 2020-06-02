@@ -88,6 +88,7 @@ input[type=text] {
     border: solid #252525 0.09rem;
     color: black;
     display: inline-block;
+    margin-right: 1rem;
 }
 .btLink:hover {
     color: #ffffff;

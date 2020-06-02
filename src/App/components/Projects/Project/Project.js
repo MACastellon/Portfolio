@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeft, faLink} from "@fortawesome/free-solid-svg-icons";
 import "./Project.css";
 import {Link} from "react-router-dom";
 import LanguageContext from "../../../context/LanguageContext";
@@ -76,14 +76,8 @@ const Project = (props) => {
                     ) : (
                         null
                     )}
-                    {project.github? (
-                        <div>
-                            <a href={project.github} className="btLink btInfo" target="_blank" rel="noopener noreferrer" > GitHub <FontAwesomeIcon
-                                icon={faGithub}/></a>
-                        </div>
-                    ) : (
-                        null
-                    )}
+                    {project.github? (<a href={project.github} className="btLink btInfo" target="_blank" rel="noopener noreferrer" > GitHub <FontAwesomeIcon icon={faGithub}/></a>) : (null)}
+                    {project.site? (<a href={project.site} className="btLink btInfo" target="_blank" rel="noopener noreferrer" > Site <FontAwesomeIcon icon={faLink}/></a>) : (null)}
                 </Col>
             </Row>
         </>
