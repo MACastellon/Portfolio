@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight , faSearch} from "@fortawesome/free-solid-svg-icons";
-
+import LazyLoad from 'react-lazy-load'
 import {Row, Col, Card} from 'react-bootstrap';
 import "./Projects.css";
 import LanguageContext from "../../context/LanguageContext";
@@ -41,7 +41,9 @@ const Projects = () => {
                         return (
                             <Col key={key}>
                                     <Card>
-                                        <Card.Img  variant={"top"} src={project.image} />
+                                        <LazyLoad width={"auto"} height={"auto"}>
+                                            <Card.Img  variant={"top"} src={project.image} />
+                                        </LazyLoad>
                                         <Card.Body>
                                             <Card.Title>{project.title}</Card.Title>
                                             <Card.Text>
