@@ -7,7 +7,7 @@ const ChooseLanguage = () => {
     const {changeLanguageFn} = useContext(LanguageContext);
     return (
         <>
-            <Image src={"/logo.svg"}  />
+            <img src={"/logo.svg"}  />
             <h2>Portfolio</h2>
             <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("fr")} }>Français</Link>
             <Link className={"btLinkAlt"} onClick={() => {changeLanguageFn("en")} }>English</Link>
