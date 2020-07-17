@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Row, Col, Image} from "react-bootstrap";
-import {NavLink, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import LanguageContext from "../../context/LanguageContext";
@@ -97,14 +97,11 @@ const Home = () => {
                             <img  width={"80px"} src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Logo de C#"/>
                             <span id={"logo-span"}>Node Js</span>
                         </div>
-                    </div>
-                    <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"80px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Logo de C#"/>
-                            <span id={"logo-span"}>Node Js</span>
+                            <img  width={"140px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Logo de C#"/>
+                            <span id={"logo-span"}>Express Js</span>
                         </div>
                     </div>
-
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
