@@ -98,6 +98,13 @@ const Home = () => {
                             <span id={"logo-span"}>Node Js</span>
                         </div>
                     </div>
+                    <div className={"skills"}>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"80px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Logo de C#"/>
+                            <span id={"logo-span"}>Node Js</span>
+                        </div>
+                    </div>
+
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
