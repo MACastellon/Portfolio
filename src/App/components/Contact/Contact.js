@@ -22,7 +22,7 @@ const Contact = () => {
                     <p><FontAwesomeIcon icon={faEnvelope}/> macastellon101@gmail.com</p>
                 </div>
                 <div>
-                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("En recherche d'emploi"):("Looking for a job")} </p>
+                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("Développeur Full Stack chez Stringray"):("Full Stack Developer at Stingray")} </p>
                 </div>
             </div>
             <iframe
