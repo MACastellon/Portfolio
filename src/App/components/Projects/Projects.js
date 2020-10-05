@@ -11,11 +11,21 @@ const Projects = () => {
     document.documentElement.scrollTop = 0;
 
     const {language, projects} = useContext(LanguageContext);
+
     const  [projectsList, setProjectList] = useState([]);
+    const [filter, setFilter] = useState("");
+    const [searchField, setSearchField] = useState("");
 
     useEffect(() => {
-        setProjectList(projects);
-    }, [projects,language])
+        if (filter !== "") {
+            setProjectList(projects.filter((project)  => project.category === filter));
+        } else {
+            setProjectList(projects);
+        }
+        console.log(filter)
+    }, [projects,language,filter])
+
+
     const shorten = (str) => {
 
         if (str.lenght <= 100) {
@@ -25,37 +35,34 @@ const Projects = () => {
         }
     }
 
-    const SearchHandler = (e) => {
-        setProjectList(projects.filter((project)  => project.title.toLowerCase().includes(e.target.value.toLowerCase())));
-    }
 
     return (
         <>
             <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
-            <div className="search-bar">
-                <input type="text" placeholder={language === "fr" ? ("Rechercher un projet") : ("Search a project")} onChange={SearchHandler}/>
+
+            <div className={"filter-section"}>
+                <button className={filter === "" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('')}>{language === "fr" ? ("Tous") : ("All")}</button>
+                <button className={filter === "web" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('web')}>{language === "fr" ? ("Web") : ("Web")}</button>
+                <button className={filter === "game" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('game')}>{language === "fr" ? ("Jeux") : ("Games")}</button>
             </div>
             <Row lg={3} md={2} xs={1}>
                     {projectsList.map((project, key) => {
                         return (
                             <Col key={key}>
                                     <Card>
-
-                                            <Card.Img  variant={"top"} src={project.image} />
-
+                                        <Card.Img  variant={"top"} src={project.image} />
                                         <Card.Body>
                                             <Card.Title>{project.title}</Card.Title>
                                             <Card.Text>
                                                 {shorten(project.descriptions[0].description)}
                                             </Card.Text>
-                                            <Link  to={{pathname: '/projects/'+project.id }} class={"btLink"}>{language === "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
+                                            <Link  to={{pathname: '/projects/'+key }} class={"btLink"}>{language === "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
                                         </Card.Body>
                                     </Card>
                             </Col>
-                        )
-                    })}
-                    </Row>
-            </>
+                        )})}
+            </Row>
+        </>
     )
 }
 export default Projects;

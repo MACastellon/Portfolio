@@ -47,7 +47,7 @@ const Project = (props) => {
                         </ul>
                     </div>
                     <div className={"info"}>
-                        <h3>{language === "fr" ? ("Logiciel(s) / outils utilisée(s)"):("Software(s) / Tool(s)")}</h3>
+                        <h3>Technologie(s)</h3>
                         <ul className={"list"}>
                             {project.softwares.map((software , key) => {
                                 return <li key={key}>{software.name}</li>
