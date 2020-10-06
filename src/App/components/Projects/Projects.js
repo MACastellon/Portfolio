@@ -41,9 +41,9 @@ const Projects = () => {
             <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
 
             <div className={"filter-section"}>
-                <button className={filter === "" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('')}>{language === "fr" ? ("Tous") : ("All")}</button>
-                <button className={filter === "web" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('web')}>{language === "fr" ? ("Web") : ("Web")}</button>
-                <button className={filter === "game" ? ("btLink filter-active") : ("btLink")} onClick={() => setFilter('game')}>{language === "fr" ? ("Jeux") : ("Games")}</button>
+                <button className={filter === "" ? ("btFilter filter-active") : ("btFilter")} onClick={() => setFilter('')}>{language === "fr" ? ("Tous") : ("All")}</button>
+                <button className={filter === "web" ? ("btFilter filter-active") : ("btFilter")} onClick={() => setFilter('web')}>{language === "fr" ? ("Web") : ("Web")}</button>
+                <button className={filter === "game" ? ("btFilter filter-active") : ("btFilter")} onClick={() => setFilter('game')}>{language === "fr" ? ("Jeux") : ("Games")}</button>
             </div>
             <Row lg={3} md={2} xs={1}>
                     {projectsList.map((project, key) => {
