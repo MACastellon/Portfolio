@@ -184,5 +184,32 @@
     "note": "",
     "github": "https://github.com/MACastellon/la-familia",
     "site": ""
+  },
+  {
+    "id": "8",
+    "image": "/images/image-filter.PNG",
+    "title": "Image Filter" ,
+    "descriptions":[
+      {"id": 0, "description":  "Small web application where you can apply some filters to your image and then download it"}
+    ],
+    "date": "2020" ,
+    "category": "web" ,
+    "language": [
+      {"name" :  "Javascript"},
+      {"name" :  "CSS"}
+    ],
+    "softwares": [
+      {"name": "React.js"},
+      {"name": "Netlifty"},
+      {"name": "WebStorm"},
+      {"name": "GitHub"}
+    ],
+    "youtubeId": "",
+    "contributions":"",
+    "role": "",
+    "type": "personal",
+    "note": "",
+    "github": "https://github.com/MACastellon/image-filter",
+    "site": "https://image-filter-demo.netlify.app/"
   }
 ]

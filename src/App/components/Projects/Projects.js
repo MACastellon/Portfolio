@@ -27,15 +27,13 @@ const Projects = () => {
 
 
     const shorten = (str) => {
-
-        if (str.lenght <= 100) {
-            return str + " ...";
-        } else {
+        if (str.toString().length >= 100) {
             return str.slice(0,100) + " ...";
+        } else {
+            return str;
         }
     }
-
-
+    
     return (
         <>
             <h2 className={"underline"}>{language === "fr" ? ("Mes Projets"):("My Projects")}</h2>
