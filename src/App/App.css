@@ -9,6 +9,11 @@ body {
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
+::selection {
+    background: #252525;
+    color: #fff;
+}
+
 ul {
     margin: 0;
     padding: 0;
