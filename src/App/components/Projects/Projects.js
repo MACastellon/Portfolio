@@ -14,7 +14,6 @@ const Projects = () => {
 
     const  [projectsList, setProjectList] = useState([]);
     const [filter, setFilter] = useState("");
-    const [searchField, setSearchField] = useState("");
 
     useEffect(() => {
         if (filter !== "") {

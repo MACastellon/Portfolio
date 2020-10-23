@@ -31,7 +31,7 @@ const Home = () => {
                         <>
                             <p>
                                 Hello, my name is Marc-André Castellon and I’m a <b>programmer</b>. I’m about to graduate in Multimedia Integration Techniques
-                                at Saint-Jérôme’s CEGEP. I love to program, whether it’s <b>games</b> or <b>web applications</b>.
+                                at Saint-Jérôme’s CEGEP. I love to <b>program</b>, whether it’s <b>games</b> or <b>web applications</b>.
 
                             </p>
                             <p>
