@@ -47,7 +47,7 @@ const Home = () => {
                     </div>
                 </Col>
             </Row>
-            <h2 className={"underline"}>{language === "fr" ? ("Mes Connaissances"):("Knowledge")}</h2>
+            <h2 className={"underline"}>Technologies</h2>
             <Row lg={3} md={3} xs={1}>
                 <Col>
                     <div className={"contact-title"}>
@@ -70,9 +70,12 @@ const Home = () => {
                             <img width={"55px"} src="/images/css_logo.png" alt="Official Css Logo Png" />
                             <span id={"logo-span"}>CSS 3</span>
                         </div>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"90px"} src="https://www.php.net//images/logos/new-php-logo.svg" alt="Logo de C#"/>
+                            <span id={"logo-span"}>PHP</span>
+                        </div>
                     </div>
                 </Col>
-
                 <Col>
                     <div className={"contact-title"}>
                         <h3>Front End</h3>
@@ -126,6 +129,21 @@ const Home = () => {
                         <div className={"knowledge-logo"}>
                             <img  width={"55px"} src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png" alt="Logo de C#"/>
                             <span id={"logo-span"}>Unity</span>
+                        </div>
+                    </div>
+                </Col>
+                <Col>
+                    <div className={"contact-title"}>
+                        <h3>{language === "fr" ? ("Base de données"):("Database")}</h3>
+                    </div>
+                    <div className={"skills"}>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"110px"} src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="Logo de C#"/>
+                            <span id={"logo-span"}>MongoDB</span>
+                        </div>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"80px"} src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="Logo de C#"/>
+                            <span id={"logo-span"}>MySQL</span>
                         </div>
                     </div>
                 </Col>
