@@ -104,6 +104,10 @@ const Home = () => {
                             <img  width={"140px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Logo de C#"/>
                             <span id={"logo-span"}>Express Js</span>
                         </div>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"60px"} src="https://laravel.com/img/logomark.min.svg" alt="Logo de C#"/>
+                            <span id={"logo-span"}>Laravel</span>
+                        </div>
                     </div>
                 </Col>
                 <Col>
