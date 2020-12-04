@@ -108,7 +108,7 @@ input[type=text] {
     transition: all 0.4s ease-in-out;
 }
 .btLink:hover .fa-arrow-right {
-    transform: translateX(5px);
+    transform: translateX(8px);
     transition: all ease-in-out 0.4s;
 }
 
@@ -226,7 +226,6 @@ input[type=text] {
     border: 1px solid #9a9a9a;
     transition: all ease-in-out 0.4s;
     margin-bottom: 1rem;
-
 }
 .card-img-top {
     width: 100%;
@@ -382,6 +381,7 @@ input[type=text] {
 .languageSwap {
     color: #d6d6d6;
 }
+
 
 @media only screen and (max-width: 991px) {
     .languageSwap.btLinkAlt {

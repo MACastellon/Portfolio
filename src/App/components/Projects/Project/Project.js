@@ -15,7 +15,6 @@ const Project = (props) => {
     const {language, projects} = useContext(LanguageContext);
     const id  = props.id;
     const project = projects[id];
-
     return (
         <>
             <div className={"goBack"}><Link to={"/projects"}><FontAwesomeIcon icon={faArrowLeft}/> {language === "fr" ? ("Retour à la liste de projets"):("Back to the portfolio")} </Link></div>

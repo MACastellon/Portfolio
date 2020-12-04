@@ -19,7 +19,6 @@ const LanguageProvider = props => {
         if (window.localStorage != null) {
             setLanguage(window.localStorage.getItem("lang"));
             if (language === "fr") {
-
                 setProjects(fr_projects);
             } else {
                 setProjects(en_projects);

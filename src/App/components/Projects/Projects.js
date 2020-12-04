@@ -21,7 +21,6 @@ const Projects = () => {
         } else {
             setProjectList(projects);
         }
-        console.log(filter)
     }, [projects,language,filter])
 
 
@@ -46,16 +45,19 @@ const Projects = () => {
                     {projectsList.map((project, key) => {
                         return (
                             <Col key={key}>
-                                    <Card>
+                                    <div className={'card'}>
                                         <Card.Img  variant={"top"} src={project.image} />
                                         <Card.Body>
                                             <Card.Title>{project.title}</Card.Title>
                                             <Card.Text>
                                                 {shorten(project.descriptions[0].description)}
                                             </Card.Text>
-                                            <Link  to={{pathname: '/projects/'+key }} class={"btLink"}>{language === "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
+                                            {
+                                                console.log(projects.length - project.id)
+                                            }
+                                            <Link  to={{pathname: '/projects/'+(projects.length - project.id - 1)}} class={"btLink"}>{language === "fr" ? ("En savoir plus"):("Learn More")} <FontAwesomeIcon icon={faArrowRight}/></Link>
                                         </Card.Body>
-                                    </Card>
+                                    </div>
                             </Col>
                         )})}
             </Row>
