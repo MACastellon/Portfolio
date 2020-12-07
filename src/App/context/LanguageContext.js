@@ -16,7 +16,7 @@ const LanguageProvider = props => {
 
 
     useEffect(  () => {
-        if (window.localStorage != null) {
+        if (window.localStorage.getItem("lang")) {
             setLanguage(window.localStorage.getItem("lang"));
             if (language === "fr") {
                 setProjects(fr_projects);

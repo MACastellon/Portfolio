@@ -184,7 +184,7 @@
     "site": ""
   },
   {
-    "id": "8",
+    "id": "7",
     "image": "/images/image-filter.PNG",
     "title": "Image Filter" ,
     "descriptions":[
@@ -208,5 +208,34 @@
     "note": "",
     "github": "https://github.com/MACastellon/image-filter",
     "site": "https://image-filter-demo.netlify.app/"
+  },
+  {
+    "id": "8",
+    "image": "/images/mern_stack_starter.jpg",
+    "title": "MERN Stack Starter" ,
+    "descriptions":[
+      {"id": 0, "description":  "Ceci est un kit de démarrage de base pour le MERN (MongoDB, Express.js, React.js, Node.js) stack."},
+      {"id": 1, "description":  "Mon but ici est tout simplement de créer un kit de démarrage pour accélérer le development d'une application full stack utilisant le MERN stack"}
+    ],
+    "date": "2020" ,
+    "category": "web" ,
+    "language": [
+      {"name" :  "Javascript"},
+      {"name" :  "CSS"}
+    ],
+    "softwares": [
+      {"name": "Mongo DB"},
+      {"name": "Express.js"},
+      {"name": "React.js"},
+      {"name": "Node.js"},
+      {"name": "GitHub"}
+    ],
+    "youtubeId": "",
+    "contributions":"",
+    "role": "",
+    "type": "personal",
+    "note": "",
+    "github": "https://github.com/MACastellon/mern_stack_starter",
+    "site": ""
   }
 ]
