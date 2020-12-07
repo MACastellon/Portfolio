@@ -122,7 +122,7 @@ input[type=text] {
     transition: all 0.4s ease-in-out;
 }
 .btLink:hover .fa-arrow-right {
-    transform: translateX(8px);
+    transform: translateX(10px);
     transition: all ease-in-out 0.4s;
 }
 
