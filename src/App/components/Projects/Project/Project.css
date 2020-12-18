@@ -21,14 +21,34 @@
     position: absolute;
     top: 50%;
     bottom: 50%;
-    right: 3%;
-   /*text-align: right;*/
+    right: 2%;
 }
+.icon-next span {
+    padding : 18px;
+}
+
 .icon-prev {
     position: absolute;
     top: 50%;
     bottom: 50%;
-    left: 3%;
+    left: 2%;
+}
+.icon-prev span {
+    padding: 0 18px;
+}
+a.icon-next .fa-angle-right {
+    transition: all 0.4s ease-in-out;
+}
+a.icon-prev .fa-angle-left {
+    transition: all 0.4s ease-in-out;
+}
+a.icon-next:hover .fa-angle-right {
+    transform: translateX(5px);
+    transition: all 0.4s ease-in-out;
+}
+a.icon-prev:hover .fa-angle-left {
+    transform: translateX(-5px);
+    transition: all 0.4s ease-in-out;
 }
 .icon:hover {
     color: #252525;

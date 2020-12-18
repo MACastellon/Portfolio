@@ -36,10 +36,10 @@ const ProjectSlider = (props) => {
             {prev < 0 ? (
                 null
             ) : (
-                <Link to={"/projects/"+ prev}><FontAwesomeIcon className={"icon icon-prev"} icon={faAngleLeft}/></Link>
+                <Link to={"/projects/"+ prev} className={"icon icon-prev"}><span><FontAwesomeIcon  icon={faAngleLeft}/></span></Link>
             )}
             {next < (projects.length) ? (
-                <Link to={"/projects/"+ next}><FontAwesomeIcon className={"icon icon-next"}  icon={faAngleRight}/></Link>
+                <Link to={"/projects/"+ next} className={"icon icon-next"} ><span><FontAwesomeIcon  icon={faAngleRight}/></span></Link>
             ) : (
                 null
             )}

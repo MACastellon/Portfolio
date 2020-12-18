@@ -15,7 +15,7 @@ const Header = () => {
                 <Container>
                     <div className={"brand"}>
                         <Image src={"/logo.svg"}  width={"75px"} fluid/>
-                        <Navbar.Brand href="/home"> <h1>Marc-André Castellon</h1><p>{language === "fr" ? ("Programmeur"):("Programmer")}</p></Navbar.Brand>
+                        <Navbar.Brand href="/home"> <h1>Marc-André Castellon</h1><p>{language === "fr" ? ("Développeur Full Stack"):("Full Stack Developer")}</p></Navbar.Brand>
                     </div>
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse  id="responsive-navbar-nav">
