@@ -16,17 +16,17 @@ const Contact = () => {
             <h2 className={"underline"}>Contact</h2>
             <div className={"contact-info"}>
                 <div>
-                    <p><FontAwesomeIcon icon={faHome}/> Vaudreuil-Dorion</p>
+                    <p><FontAwesomeIcon icon={faHome}/> {language === "fr" ? ("L'Île-Perrot ") : ("L'Ile-Perrot ")}</p>
                 </div>
                 <div>
                     <p><FontAwesomeIcon icon={faEnvelope}/> macastellon101@gmail.com</p>
                 </div>
                 <div>
-                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("Développeur Full Stack chez Stringray"):("Full Stack Developer at Stingray")} </p>
+                    <p><FontAwesomeIcon icon={faSuitcase}/> {language === "fr" ? ("Développeur Web chez Spiria"):("Web Developer at Spiria")}</p>
                 </div>
             </div>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179302.80163442204!2d-74.22714334874964!3d45.39711258514924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc935fe287e6f93%3A0x5040cadae4d5050!2sVaudreuil-Dorion%2C%20QC!5e0!3m2!1sen!2sca!4v1588962440634!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44827.691439371076!2d-74.00618195335987!3d45.39460264950841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9386fffb06e0b%3A0x2f72c0db31959b4a!2sL&#39;%C3%8Ele-Perrot%2C%20QC!5e0!3m2!1sen!2sca!4v1610544780807!5m2!1sen!2sca"
                 width="100%" height="450" frameBorder="0" allowFullScreen="" aria-hidden="false"
                 tabIndex="0" className={"googleMap"}
                 title={"Map"}></iframe>
