@@ -78,6 +78,9 @@ input[type=text] {
 .profil-img {
     text-align: center;
 }
+.profil-img .img{
+    botder-radius : 3px;
+}
 .info {
     margin-bottom: 1em;
 }
@@ -336,6 +339,14 @@ input[type=text] {
     transition: all ease-in-out 0.4s;
     text-align: center;
     margin-top: 0.5em;
+}
+#jquery-logo {
+    position: relative;
+    top : -10px;
+}
+#laravel-logo{
+    position: relative;
+    top : -5px;
 }
 
 .knowledge-logo:hover #logo-span{

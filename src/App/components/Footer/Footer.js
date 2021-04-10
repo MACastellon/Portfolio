@@ -10,7 +10,7 @@ const Footer = () => {
                 <a href={"https://github.com/MACastellon"} target={"_blank"} rel="noreferrer"  className={"btContact"}><FontAwesomeIcon icon={faGithub}/></a>
                 <a href={"https://www.linkedin.com/in/marc-andr%C3%A9-castellon-409944190/"} target={"_blank"} rel="noreferrer"   className={"btContact"}><FontAwesomeIcon icon={faLinkedinIn}/></a>
                 <a href={"https://www.facebook.com/castel.mvp"} target={"_blank"} rel="noreferrer" className={"btContact"}><FontAwesomeIcon icon={faFacebookF}/></a>
-                <a href={"https://www.facebook.com/castel.mvp"} target={"_blank"} rel="noreferrer"  className={"btContact"}><FontAwesomeIcon icon={faTwitter}/></a>
+                <a href={"https://twitter.com/Argamilwins"} target={"_blank"} rel="noreferrer"  className={"btContact"}><FontAwesomeIcon icon={faTwitter}/></a>
             </Nav>
         </footer>
 
