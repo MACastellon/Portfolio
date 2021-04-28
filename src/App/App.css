@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 ::selection {
-    background: #252525;
+    background: #212121;
     color: #fff;
 }
 
@@ -59,15 +59,15 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #252525;
+    background-color: #212121;
     z-index: 9999;
 }
 
 footer {
-    background-color: #252525;
+    background-color: #212121;
 }
 input[type=text] {
-    border: 1px solid #252525;
+    border: 1px solid #212121;
     padding: 5px;
     width: 31%;
     margin-bottom: 1rem;
@@ -78,8 +78,8 @@ input[type=text] {
 .profil-img {
     text-align: center;
 }
-.profil-img .img{
-    botder-radius : 3px;
+.profil-img img{
+    border-radius : 2px;
 }
 .info {
     margin-bottom: 1em;
@@ -97,24 +97,24 @@ input[type=text] {
 }
 .btLink {
     padding :  0.5rem 2rem 0.5rem 2rem;
-    border: solid #252525 0.09rem;
+    border: solid #212121 0.09rem;
     color: black;
     display: inline-block;
     margin-right: 1rem;
     transition: all 0.4s ease-in-out;
 }
 .btLink .fa-arrow-right {
-    transition: all ease-in-out 0.4s;
+    transition: transform ease-in-out 0.4s;
 }
 .btLink:hover {
     color: #ffffff;
-    background-color : #252525;
+    background-color : #212121;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
 }
 .btLink:hover .fa-arrow-right {
     transform: translateX(10px);
-    transition: all ease-in-out 0.4s;
+    transition: transform ease-in-out 0.4s;
 }
 
 .btLinkAlt {
@@ -122,7 +122,7 @@ input[type=text] {
     border: solid #fff 0.09rem;
     color: white;
     display: inline-block;
-    background-color : #252525;
+    background-color : #212121;
     transition: all 0.4s ease-in-out;
 }
 .btLinkAlt:hover {
@@ -133,7 +133,7 @@ input[type=text] {
 }
 .btFilter {
     padding :  0.5rem 1.3rem;
-    border: solid #252525 0.09rem;
+    border: solid #212121 0.09rem;
     background: #fff;
     color: black;
     display: inline-block;
@@ -142,14 +142,16 @@ input[type=text] {
 }
 .btFilter:hover {
     color: #ffffff;
-    background-color : #252525;
+    background-color : #212121;
     text-decoration: none;
     transition: all ease-in-out 0.4s;
 }
-
+button:focus {
+    outline: none;
+}
 
 .filter-active {
-    background: #252525;
+    background: #212121;
     color: #fff;
 }
 
@@ -162,7 +164,7 @@ input[type=text] {
 .main-lang-select {
     position: relative;
     min-height:  100vh;
-    background-color: #252525;
+    background-color: #212121;
     color: #fff;
     padding: 4rem 0;
     text-align: center;
@@ -260,7 +262,7 @@ input[type=text] {
 }
 .btContact:hover {
     color: white;
-    background-color: #252525;
+    background-color: #212121;
     transition: all ease-in-out 0.4s;
 }
 
@@ -268,7 +270,7 @@ input[type=text] {
 
     font-size: 2rem;
     color: white;
-    background-color: #252525;
+    background-color: #212121;
     border: solid white 1.8px;
     margin: 0.5rem;
     text-align: center;
@@ -282,7 +284,7 @@ input[type=text] {
 .btContactAlt:hover {
     color: black;
     background-color: #fff;
-    border-color: #252525;
+    border-color: #212121;
     transition: all ease-in-out 0.4s;
 }
 
@@ -301,6 +303,13 @@ input[type=text] {
     text-align: center;
     justify-content: space-around;
     align-content: center;
+}
+.contact-info div p {
+    display: flex;
+    align-items: center;
+}
+.contact-info div p :first-child{
+    margin-right: 0.5em;
 }
 .contact-title {
   display: flex;
@@ -344,6 +353,10 @@ input[type=text] {
     position: relative;
     top : -10px;
 }
+#sass-logo {
+    position: relative;
+    top : 3px;
+}
 #laravel-logo{
     position: relative;
     top : -5px;
@@ -383,12 +396,12 @@ input[type=text] {
     margin-top: 3rem;
 }
 .goBack a .fa-arrow-left {
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 
 }
 .goBack a:hover .fa-arrow-left {
     transform: translateX(-10px);
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 
 }
 .googleMap {
@@ -413,7 +426,7 @@ input[type=text] {
         padding: 0 0 1rem 0;
     }
     input[type=text] {
-        border: 1px solid #252525;
+        border: 1px solid #212121;
         padding: 5px;
         width: 100%;
 
@@ -448,7 +461,7 @@ input[type=text] {
 @media only screen and (max-width: 375px) {
     .main-lang-select {
 
-        background-color: #252525;
+        background-color: #212121;
         color: #fff;
         text-align: center;
     }

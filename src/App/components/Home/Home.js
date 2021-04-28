@@ -19,23 +19,23 @@ const Home = () => {
                     {language === "fr" ? (
                         <>
                             <p>
-                                Bonjour, je suis Marc-André Castellon et je suis un <b>programmeur</b>. Je suis finissant en Techniques d’intégration multimédia au cégep de Saint-Jérôme.
+                                Bonjour, je suis Marc-André Castellon et je suis un <b>développeur full stack</b>. J'ai fait une Technique d’intégration multimédia au cégep de Saint-Jérôme.
                                 J’adore <b>programmer</b> que ça soit des <b>jeux</b> ou des <b>applications web</b>.
                             </p>
                             <p>
-                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre, j'aime travailler sur des <b>projets personnels</b> afin d'approfondir mes connaissances.
+                                J'aime relever des défis et apprendre des nouvelles choses! Lorsque j'ai du temps libre, j'aime travailler sur des <b>projets personnels</b> et prendre des <b>cours en ligne</b> afin d'approfondir mes connaissances.
                             </p>
                         </>
 
                     ):(
                         <>
                             <p>
-                                Hello, my name is Marc-André Castellon and I’m a <b>programmer</b>. I’m about to graduate in Multimedia Integration Techniques
-                                at Saint-Jérôme’s CEGEP. I love to <b>program</b>, whether it’s <b>games</b> or <b>web applications</b>.
+                                Hello, my name is Marc-André Castellon and I’m a <b>full stack developer</b>. I did a Technique in multimedia integration
+                                at Saint-Jérôme’s CEGEP. I love to <b>code</b>, whether it’s <b>games</b> or <b>web applications</b>.
 
                             </p>
                             <p>
-                                I like to take on challenges and learn new things. When I have some spare time I like to work on <b>hobby projects</b> in order to deepen my knowledge.
+                                I like to take on challenges and learn new things. When I have some spare time I like to work on <b>hobby projects</b> and take <b>online courses</b> in order to deepen my knowledge.
                             </p>
                         </>
                     )}
@@ -83,17 +83,20 @@ const Home = () => {
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
                             <img  width={"55px"} src="/images/React-icon.svg" alt="Logo de ReactJs"/>
-                            <span id={"logo-span"}>React</span>
+                            <span id={"logo-span"}>React.js</span>
                         </div>
                         <div id={'jquery-logo'} className={"knowledge-logo"}>
                             <img   width={"65px"} src="/images/jquery.png" alt="jQuery logo"/>
                             <span id={"logo-span"}>jQuery</span>
                         </div>
+                        <div id={'sass-logo'} className={"knowledge-logo"}>
+                            <img   width={"65px"} src="/images/sass.png" alt="Sass logo"/>
+                            <span id={"logo-span"}>Sass</span>
+                        </div>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Logo de Bootstrap"/>
+                            <img  width={"55px"} src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap Logo"/>
                             <span id={"logo-span"}>Bootstrap</span>
                         </div>
-                        
                     </div>
                 </Col>
                 <Col>
@@ -102,31 +105,35 @@ const Home = () => {
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"80px"} src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Logo de C#"/>
-                            <span id={"logo-span"}>Node Js</span>
+                            <img  width={"80px"} src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo"/>
+                            <span id={"logo-span"}>Node.js</span>
                         </div>
                         <div className={"knowledge-logo"}>
-                            <img  width={"140px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Logo de C#"/>
-                            <span id={"logo-span"}>Express Js</span>
+                            <img  width={"140px"} src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js Logo"/>
+                            <span id={"logo-span"}>Express.js</span>
                         </div>
                         <div id={"laravel-logo"} className={"knowledge-logo"}>
-                            <img  width={"60px"} src="https://laravel.com/img/logomark.min.svg" alt="Logo de C#"/>
+                            <img  width={"60px"} src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo"/>
                             <span id={"logo-span"}>Laravel</span>
                         </div>
                     </div>
                 </Col>
                 <Col>
                     <div className={"contact-title"}>
-                        <h3>{language === "fr" ? ("Logiciels"):("Softwares")}</h3>
+                        <h3>{language === "fr" ? ("Outils"):("Tools")}</h3>
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Logo de C#"/>
-                            <span id={"logo-span"}>Photoshop</span>
+                            <img  width={"65px"} src="/images/git.png" alt="Jira Logo"/>
+                            <span id={"logo-span"}>Git</span>
                         </div>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Logo de C#"/>
-                            <span id={"logo-span"}>Illustrator</span>
+                            <img  width={"60px"} src="/images/sourcetree.svg" alt="Sourcetree Logo"/>
+                            <span id={"logo-span"}>Sourcetree</span>
+                        </div>
+                        <div className={"knowledge-logo"}>
+                            <img  width={"65px"} src="/images/jira.svg" alt="Jira Logo"/>
+                            <span id={"logo-span"}>Jira</span>
                         </div>
                     </div>
                 </Col>
@@ -136,7 +143,7 @@ const Home = () => {
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"55px"} src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png" alt="Logo de C#"/>
+                            <img  width={"55px"} src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png" alt="Unity Logo"/>
                             <span id={"logo-span"}>Unity</span>
                         </div>
                     </div>
@@ -147,11 +154,11 @@ const Home = () => {
                     </div>
                     <div className={"skills"}>
                         <div className={"knowledge-logo"}>
-                            <img  width={"110px"} src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="Logo de C#"/>
+                            <img  width={"110px"} src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="MongoDB Logo"/>
                             <span id={"logo-span"}>MongoDB</span>
                         </div>
                         <div className={"knowledge-logo"}>
-                            <img  width={"80px"} src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="Logo de C#"/>
+                            <img  width={"80px"} src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="SQL Logo"/>
                             <span id={"logo-span"}>MySQL</span>
                         </div>
                     </div>

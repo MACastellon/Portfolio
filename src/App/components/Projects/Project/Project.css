@@ -37,25 +37,23 @@
     padding: 0 18px;
 }
 a.icon-next .fa-angle-right {
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-out;
 }
 a.icon-prev .fa-angle-left {
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 a.icon-next:hover .fa-angle-right {
     transform: translateX(5px);
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 a.icon-prev:hover .fa-angle-left {
     transform: translateX(-5px);
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 .icon:hover {
     color: #252525;
 }
-.icon:focus {
-    color: black;
-}
+
 
 .icon-close {
     font-size: 2.5rem;
