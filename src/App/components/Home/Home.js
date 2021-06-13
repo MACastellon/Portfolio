@@ -14,6 +14,7 @@ const Home = () => {
 
         <>
             <h2 className={"underline"}>{language === "fr" ? ("À propos") : ("About")}</h2>
+
             <Row lg={2} md={2} xs={1}>
                 <Col lg={9}>
                     {language === "fr" ? (

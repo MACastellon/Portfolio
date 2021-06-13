@@ -267,7 +267,6 @@ button:focus {
 }
 
 .btContactAlt {
-
     font-size: 2rem;
     color: white;
     background-color: #212121;
@@ -276,7 +275,7 @@ button:focus {
     text-align: center;
     width: 75px;
     height: 75px;
-    line-height: 68px;
+    line-height: 70px;
     border-radius: 50%;
     display: inline-block;
     transition: all ease-in-out 0.4s;

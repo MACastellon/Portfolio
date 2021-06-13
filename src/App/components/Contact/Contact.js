@@ -22,7 +22,7 @@ const Contact = () => {
                     <p><FontAwesomeIcon icon={faEnvelope}/> macastellon101@gmail.com</p>
                 </div>
                 <div>
-                    <p> <img width={"20px"} src={"/images/spiria_mini.png"}/> {language === "fr" ? ("Développeur Web chez Spiria"):("Web Developer at Spiria")}</p>
+                    <p><img width={"20px"} src={"/images/spiria_mini.png"}/> {language === "fr" ? ("Développeur Web chez Spiria"):("Web Developer at Spiria")}</p>
                 </div>
             </div>
             <iframe
